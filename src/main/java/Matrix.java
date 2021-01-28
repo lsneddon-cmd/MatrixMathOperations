@@ -24,6 +24,13 @@ public class Matrix<T> {
     }
 
     public T getData(int row, int col) {
+        if (row < 0 || col < 0) {
+            throw new ArrayIndexOutOfBoundsException(
+                    "Row and Column must be greater than 0."
+                    + "Row entered: " + row
+                    + "Column entered: " + col);
+        }
+        if (row > this.rows && col > this.cols)
         if (row > this.rows) {
             throw new ArrayIndexOutOfBoundsException(
                 "This matrix has "
