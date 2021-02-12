@@ -1,8 +1,9 @@
-public class Add implements Calculation {
-  @Override
-  public Matrix execute(Matrix one, Matrix two) {
-    // TODO perform addition
-    Matrix res = new Matrix();
-    return res;
+public class Add implements Calculations {
+  public Matrix execute() {
+    return new Matrix(new Integer[][] {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        });
   }
 }

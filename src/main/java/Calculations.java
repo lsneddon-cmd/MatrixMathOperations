@@ -1,0 +1,3 @@
+interface Calculations {
+  Matrix execute();
+}
