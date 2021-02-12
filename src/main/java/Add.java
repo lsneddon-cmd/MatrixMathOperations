@@ -1,9 +1,17 @@
 public class Add implements Calculations {
-  public Matrix execute() {
-    return new Matrix(new Integer[][] {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        });
+  private final Matrix one;
+  private final Matrix two;
+
+  public Add(Matrix one, Matrix two) {
+    this.one = one;
+    this.two = two;
+  }
+
+  public final Matrix execute() {
+    return performAddition();
+  }
+
+  private final Matrix performAddition() {
+    return this.one;
   }
 }
